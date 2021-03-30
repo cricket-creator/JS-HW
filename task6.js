@@ -1,31 +1,24 @@
-// let operation = prompt(`Введите арифметическую операцию`, `сложение`);
-// let arg1 = +prompt(`Введите первую переменную: `);
-// let arg2 = +prompt(`Введите вторую переменную: `);
+function mathOpeartion(arg1, arg2, operation) {
+    operation = prompt(`Введите тип математической операции: `, `сложение`);
 
-// switch (operation) {
-//     case `сложение`:
-//         MathOpeartion(arg1, arg2, operation);
-//         break;
-//     case `вычитание`:
-//         MathOpeartion(arg1, arg2, operation);
-//         break;
-//     case `умножение`:
-//         MathOpeartion(arg1, arg2, operation);
-//         break;
-//     case `деление`:
-//         MathOpeartion(arg1, arg2, operation);
-//         break;
-// }
+    arg1 = Number(prompt(`Введите первый аргумент: `, arg1));
+    arg2 = Number(prompt(`Введите второй аргумент: `, arg2));
 
-// function MathOpeartion(arg1, arg2, operation) {
-//     switch (operation) {
-//         case `сложение`:
-//             return alert(arg1 + arg2);
-//         case `вычитание`:
-//             return alert(arg1 - arg2);
-//         case `умножение`:
-//             return alert(arg1 * arg2);
-//         case `деление`:
-//             return alert(arg1 / arg2);
-//     }
-// }
+    if (isNaN(arg1, arg2)) {
+        alert(`Введите число!`);
+        mathOpeartion();
+    }
+
+    switch (operation) {
+        case `сложение`:
+            return alert(arg1 + arg2);
+        case `вычитание`:
+            return alert(arg1 - arg2);
+        case `умножение`:
+            return alert(arg1 * arg2);
+        case `деление`:
+            return alert(arg1 / arg2);
+    }
+}
+
+mathOpeartion();
