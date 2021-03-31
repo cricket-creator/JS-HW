@@ -5,4 +5,4 @@
 //     return val * power(val, pow - 1);
 // }
 
-// alert(power(2, 10)); // 2 * 2 **10-1
+// alert(power(2, 4));
