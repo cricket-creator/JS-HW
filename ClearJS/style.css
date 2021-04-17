@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cell {
+    background-color: bisque;
+    font-size: 24px;
+    font-weight: 600;
+    border: 1px solid #000;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell--black {
+    background-color: sandybrown;
+}
+
+#chess {
+    display: grid;
+    grid-template-columns: repeat(10, 55px);
+    grid-template-rows: repeat(10, 55px);
+    border: 1px solid #000;
+    width: fit-content;
+}
