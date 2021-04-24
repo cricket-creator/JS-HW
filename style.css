@@ -1,7 +1,23 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-areas: 
+    'board records'
+    'score score'
+    'lines lines';
+    margin-right: auto;
+}
+
 #score, #lines {
-    margin-top: 20px;
-    margin-left: 60px;
     font-size: 40px;
+}
+
+#score {
+    grid-area: score;
+}
+
+#lines {
+    grid-area: lines;
 }
 
 #board {
@@ -10,10 +26,17 @@
     display: flex;
     flex-wrap: wrap;
     background-color: #dcd6bc;
-    margin-left: 50px;
-    margin-top: 20px;
     border: 10px solid #dcd6bc;
     user-select: none;
+    grid-area: board;
+}
+
+#records {
+    grid-area: records;
+    font-size: 40px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    text-align: center;
 }
 
 #board div {

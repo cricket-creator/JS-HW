@@ -90,11 +90,21 @@ document.addEventListener('DOMContentLoaded', () => {
         linesElement.innerHTML = 'Собрано линий: ' + gameBoard.finishedLines;
     }
 
+    // Вывод таблицы рекордов
+    let counter = 1;
+    const app = document.querySelector('#records');
+    const setNewRecord = (record) => {
+        return `<div>${counter}: ${record}</div>`;
+    }
+
     // Функция завершения игры
     function gameOver() {
         console.log('Взрыв! Вы проиграли!');
         boardElement.style.borderColor = 'red';
         gameFinished = true;
+
+        app.insertAdjacentHTML('beforeend', setNewRecord(gameBoard.score));
+        counter++;
     }
 
     function pauseHandler() {
