@@ -1,0 +1,107 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    grid-row-gap: 10px;
+    grid-template-areas: 
+    'board records'
+    'score score'
+    'lines lines';
+    margin-left: 50px;
+}
+
+#score, #lines {
+    font-size: 40px;
+}
+
+#score {
+    grid-area: score;
+}
+
+#lines {
+    grid-area: lines;
+}
+
+#board {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #dcd6bc;
+    border: 10px solid #dcd6bc;
+    user-select: none;
+    grid-area: board;
+}
+
+#records {
+    grid-area: records;
+    font-size: 40px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+.record:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+#board div {
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 5px solid;
+    border-color: #f5f3eb #bab7a9 #bab7a9 #fffd9b
+}
+
+.closed {
+    background-color: #dcd6bc;
+}
+
+.lFigure {
+    background-color: blue;
+}
+
+.jFigure {
+    background-color: green;
+}
+
+.zFigure {
+    background-color: red;
+}
+
+.sFigure {
+    background-color: orange;
+}
+
+.tFigure {
+    background-color: darkblue;
+}
+
+.oFigure {
+    background-color: darkred;
+}
+
+.iFigure {
+    background-color: darkgreen;
+}
+
+.bFigure {
+    background-color: black;
+}
+
+.mFigure {
+    background-color: maroon;
+}
+
+.dFigure {
+    background-color: darkslategray;
+}
+
+.cFigure {
+    background-color: navy
+}
