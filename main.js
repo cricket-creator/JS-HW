@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let counter = 1;
     const app = document.querySelector('#records');
     const setNewRecord = (record) => {
-        return `<div>${counter}: ${record}</div>`;
+        return `<div class="record">${counter}: ${record}</div>`;
     }
 
     // Функция завершения игры
