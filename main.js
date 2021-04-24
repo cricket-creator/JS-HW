@@ -22,12 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             cells: [1, 2, BOARDWIDTH, BOARDWIDTH + 1],
             width: 3,
-            color: 'sFigure'
+            color: 'sFigure',
         },
         {
             cells: [1, BOARDWIDTH, BOARDWIDTH + 1, BOARDWIDTH * 2 + 1],
             width: 3,
-            color: 'tFigure'
+            color: 'tFigure',
         },
         {
             cells: [0, 1, BOARDWIDTH, BOARDWIDTH + 1],
@@ -38,6 +38,26 @@ document.addEventListener('DOMContentLoaded', () => {
             cells: [1, BOARDWIDTH + 1, BOARDWIDTH * 2 + 1, BOARDWIDTH * 3 + 1],
             width: 4,
             color: 'iFigure',
+        },
+        {
+            cells: [0, 1, BOARDWIDTH + 1, BOARDWIDTH + 1],
+            width: 2,
+            color: 'bFigure', //ботинок
+        },
+        {
+            cells: [0, 2, BOARDWIDTH + 1, BOARDWIDTH + 1],
+            width: 3,
+            color: 'mFigure', //танчик
+        },
+        {
+            cells: [0],
+            width: 1,
+            color: 'dFigure', // точка
+        },
+        {
+            cells: [0, 0, BOARDWIDTH, BOARDWIDTH],
+            width: 2,
+            color: 'cFigure', //короткая линия
         }
     ]
 
