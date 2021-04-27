@@ -76,7 +76,7 @@ const findInProducts = (productID) => {
 const totalPrice = (products) => {
     let sum = 0;
     products.forEach(product => {
-        sum += product.amount * (product.price - (product.price * product.discount / 100));
+        sum += product.amount * product.price /* - (product.price * product.discount / 100)) */;
     });
     return sum;
 };
